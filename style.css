@@ -1,0 +1,256 @@
+*{
+background-color: white;
+margin: 0;
+ border: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    padding-top: 30px;
+    padding-left: 165px;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.name{
+    font-family: 'Kanit', sans-serif; 
+    font-weight: bolder;
+   font-size: larger;
+   cursor: pointer;
+  
+
+}
+
+.topbar{
+    margin-top: 45px;
+    display: flex;
+     justify-content: space-around;
+}
+.topbar ul{
+    display: flex;
+    justify-items: stretch;
+    list-style-type: none;
+    gap: 3em;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 700;
+    padding-left: 200px;
+    cursor: pointer;
+    
+}
+.topbar ul li{
+    position: relative;
+}
+.topbar ul li::after{
+    content: "";
+    background-color: #12dbdb;
+    height: 3px;
+    left: 0;
+    width: 0;
+    position: absolute;
+    transition: all 300ms ease-in-out;
+    bottom: -6px;
+
+}
+.topbar ul li:hover::after{
+width: 100%;
+}
+ 
+.intro{
+    padding-left: 100px;
+   
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+#hi{
+   padding: 40px ;
+   padding-left: 100px;
+   font-size: 1.2em;
+   font-stretch: expanded;
+   max-width: 1500px;
+    
+}
+.main{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+.content{
+    padding: 25px 25px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-weight: 300;
+
+}
+img{
+    width: 1350px;
+    max-height: 450px;
+   border-radius: 80%;
+   border: 2px solid blue;
+   margin: 15px 15px;
+}
+#education{
+    display: flex;
+   
+   
+}
+.school{
+    margin:60px  ;
+   margin-left:100px;
+    max-width: 300px;
+}
+.college{
+    max-width: 250px;
+   
+    margin: 50px ;
+   margin-right:125px;
+}
+.competition{
+    margin:50px;
+
+}
+#skills{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.container{
+    min-width: 125px;
+    min-height: 100px;
+    margin: 100px 100px;
+    border-radius: 5px;
+   display:flex;
+    justify-content: center;
+   align-items:center;
+   background-color:blueviolet;
+   transition: all 300ms ease-in-out;
+}
+
+.contactMe{
+    display: flex;
+}
+.myinfo{
+
+    margin:60px  ;
+    margin-left:100px;
+     max-width: 350px;
+
+}
+.contactForm{
+    margin-top: 35px;
+}
+
+form input,form textarea{
+    width: 90%;
+     border: 0;
+     outline: none;
+     border-radius: 5px;
+     background-color: #262626;
+     padding: 15px;
+     margin: 7px 0;
+     color: #fff;
+}
+textarea{
+    color: white;
+    background-color: indigo;
+}
+#submit{
+    color:white;
+    background-color: #12dbdb;
+    margin-top: 7px;
+    padding: 10px 20px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.messageout{
+    margin: 50px 20px;
+    color: #262626;
+    font-weight: 600;
+
+    
+}
+#submit:hover{
+    background-color: #239e9a;
+    padding: 12px 22px;
+}
+
+.container:hover{
+    transform: translateY(-10px);
+    background-color: aqua;
+}
+#education p{
+    transition: all 0.5s ease-in-out;
+}
+#education p:hover{
+    background-color: orange;
+    border-radius: 5px;
+    transform: translateY(-10px);
+   
+}
+
+/* 701 */
+@media screen  and (max-width:701px){
+    .name{
+        padding-left: 140px;
+    }
+    .topbar ul{
+        padding-left: 50px;
+    }
+    .intro{
+        padding-left: 140px;
+        font-size: 1.4em;
+    }
+    .content{
+        padding: 25px;
+        padding-left: 100px;
+        margin-left: 25px;
+    }
+    img{
+        width: 225px;
+        height:300px;
+       border-radius: 50%;
+       border: 2px solid blue;
+      margin:175px 5px;
+       margin-right:100px;
+       
+    }
+    .college{
+        max-width: 250px;
+      
+        margin: 50px ;
+   margin-right:20px;
+      
+   
+    }
+    .school{
+        margin:60px  ;
+       margin-left:20px;
+        max-width:15 px;
+    }
+    .contactMe{
+        flex-wrap:wrap;
+     }
+   .contactForm{
+      margin-top: 35px;
+      margin-left:50px;
+   
+      
+  }
+     .myinfo{
+        margin-left:50px;
+        margin-bottom:10px;
+        
+     }
+     #contact{
+        padding-left:130px ;
+        font-size: 2.1em;
+     }
+     .container{
+        margin:50px 175px;
+     }
+    
+}
+
